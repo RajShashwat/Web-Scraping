@@ -39,10 +39,10 @@ def get_img(path,code):
         img.write(response.content)
 
 if __name__ == '__main__':
-     
+
     base = 36
     site_url = "http://prnt.sc/"
-    
+
     print("Code is a 6 Character string consisting of lowercase characters and integers.")
     code = input("Enter the Code: ")
     if len(code) !=6:
@@ -54,7 +54,7 @@ if __name__ == '__main__':
         code = code[:6]
     if not code.islower():
         code = code.lower()
-        
+
     count=int(input("No of Images: "))
     output_path ='output/'
 
